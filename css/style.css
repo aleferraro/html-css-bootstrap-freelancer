@@ -2,8 +2,21 @@ header, .about, footer {
   color: white;
 }
 
-h1, header {
+h1, h2, header {
   text-transform: uppercase;
+}
+
+.bar {
+  height: 3px;
+  width: 10rem;
+  display: inline-block;
+  border-radius: 2px;
+}
+
+.star {
+  display: inline-block;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 /* NAVBAR */
@@ -19,6 +32,24 @@ nav.fixed {
   z-index: 3;
 }
 
+nav [class*="nav_"] {
+  line-height: 80px;
+  height: 80px;
+}
+
+nav .nav_right {
+  text-align: right;
+}
+
+ul.menu > li {
+   display: inline-block;
+   padding-left: 1rem;
+ }
+
+ul.menu > li > a {
+  color: white;
+}
+
 /* JUMBOTRON */
 
 section.jumbotron, section.about {
@@ -29,46 +60,21 @@ section.jumbotron img {
   width: 200px;
 }
 
-.bar {
-  height: 3px;
-  width: 100px;
-  display: inline-block;
-  border-radius: 2px;
-}
-
-.star {
-  display: inline-block;
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-nav [class*="nav_"] {
-  line-height: 80px;
-  height: 80px;
-}
-
-nav .nav_right {
-  text-align: right;
-}
-
- ul.menu > li {
-   display: inline-block;
-   padding-left: 1rem;
- }
-
-ul.menu > li > a {
-  color: white;
-}
-
 /* PORTFOLIO */
 
+section.portfolio {
+  padding-bottom: 5rem;
+}
+
 .card {
-  background-color: red;
-  height: 200px;
-  border: 1px solid black;
-  border-radius: 5px;
   margin-top: 15px;
   margin-bottom: 15px;
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
 }
 
 /* ABOUT */
@@ -78,6 +84,7 @@ ul.menu > li > a {
   border-radius: 5px;
   display: inline-block;
   padding: 5px;
+  margin-top: 15px;
   margin-bottom: 15px;
 }
 
@@ -100,7 +107,8 @@ ul.menu > li > a {
 
 .copy {
   background-color: #2C3E50;
-  height: 100px;
+  height: 80px;
+  line-height: 80px;
 }
 
 /* HELPERS */
@@ -114,6 +122,10 @@ ul.menu > li > a {
 
 .a-center {
   text-align: center;
+}
+
+.a-left {
+  text-align: left;
 }
 
 .bg-white {
