@@ -1,5 +1,8 @@
-header {
+header, .about, footer {
   color: white;
+}
+
+h1, header {
   text-transform: uppercase;
 }
 
@@ -18,9 +21,8 @@ nav.fixed {
 
 /* JUMBOTRON */
 
-section.jumbotron {
+section.jumbotron, section.about {
   background-color: #1ABC9C;
-  padding-top: 120px;
 }
 
 section.jumbotron img {
@@ -58,6 +60,49 @@ ul.menu > li > a {
   color: white;
 }
 
+/* PORTFOLIO */
+
+.card {
+  background-color: red;
+  height: 200px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+/* ABOUT */
+
+.about .button {
+  border: 1px solid white;
+  border-radius: 5px;
+  display: inline-block;
+  padding: 5px;
+  margin-bottom: 15px;
+}
+
+/* CONTACT */
+
+.contact {
+  height: 500px;
+}
+
+/* FOOTER */
+
+/* CREDITS */
+
+.credits {
+  background-color: #3A546D;
+  height: 300px;
+}
+
+/* COPY */
+
+.copy {
+  background-color: #2C3E50;
+  height: 100px;
+}
+
 /* HELPERS */
 
 .ghost-align::before {
@@ -67,14 +112,18 @@ ul.menu > li > a {
   vertical-align: middle;
 }
 
-.h-500 {
-  height: 500px;
-}
-
 .a-center {
   text-align: center;
 }
 
 .bg-white {
   background-color: white;
+}
+
+.bg-black {
+  background-color: black;
+}
+
+.pt-120 {
+  padding-top: 120px;
 }
