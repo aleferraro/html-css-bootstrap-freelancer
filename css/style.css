@@ -1,0 +1,80 @@
+header {
+  color: white;
+  text-transform: uppercase;
+}
+
+/* NAVBAR */
+
+nav {
+  background-color: #2C3E50;
+}
+
+nav.fixed {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 3;
+}
+
+/* JUMBOTRON */
+
+section.jumbotron {
+  background-color: #1ABC9C;
+  padding-top: 120px;
+}
+
+section.jumbotron img {
+  width: 200px;
+}
+
+.bar {
+  height: 3px;
+  width: 100px;
+  display: inline-block;
+  border-radius: 2px;
+}
+
+.star {
+  display: inline-block;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+nav [class*="nav_"] {
+  line-height: 80px;
+  height: 80px;
+}
+
+nav .nav_right {
+  text-align: right;
+}
+
+ ul.menu > li {
+   display: inline-block;
+   padding-left: 1rem;
+ }
+
+ul.menu > li > a {
+  color: white;
+}
+
+/* HELPERS */
+
+.ghost-align::before {
+  content: '';
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.h-500 {
+  height: 500px;
+}
+
+.a-center {
+  text-align: center;
+}
+
+.bg-white {
+  background-color: white;
+}
