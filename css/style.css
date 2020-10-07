@@ -108,6 +108,9 @@ section.jumbotron img {
 .card {
   margin-top: 15px;
   margin-bottom: 15px;
+  border-radius: 5px;
+  background-color: #1ABC9C;
+  position: relative;
 }
 
 .card img {
@@ -121,16 +124,22 @@ section.jumbotron img {
   visibility: hidden;
 }
 
-
-
-.card:hover {
-  background-color: #1ABC9C;
-  border-radius: 5px;
+.card:hover::before {
+  content: '\002B';
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 13rem;
+  z-index: 1;
 }
 
-.card img:hover {
-  visibility: hidden;
+.card:hover img {
+  opacity: 0.15;
 }
+
 
 /* ABOUT */
 
@@ -171,18 +180,29 @@ form .button:hover {
   background-color: #3A546D;
 }
 
-.credits .button {
-  width: 50px;
+.circle {
+  display: inline-block;
   height: 50px;
-  line-height: 50px;
-  background-color: inherit;
+  width: 50px;
   border: 1px solid white;
   border-radius: 50%;
-  margin-right: 3px;
+  margin-right: 1rem;
 }
 
-.credits .button:hover {
+.credits .link_social {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.credits .circle:hover {
   background-color: white;
+}
+
+.credits .circle:hover .link_social {
+    color: #3A546D;
 }
 
 a.turquoise:hover {
